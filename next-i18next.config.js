@@ -1,6 +1,16 @@
 module.exports = {
   i18n: {
-    defaultLocale: "en",
     locales: ["en", "cs"],
+    defaultLocale: "en",
+    domains: [
+      {
+        domain: "www.hynekfisera.com",
+        defaultLocale: "en",
+      },
+      {
+        domain: "www.hynekfisera.cz",
+        defaultLocale: "cs",
+      },
+    ],
   },
 };
