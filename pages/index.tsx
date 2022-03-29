@@ -12,7 +12,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
   };
 }
 
-const Home: NextPage = () => {
+const Home: NextPage = (props) => {
   const { t } = useTranslation("index");
 
   return (
@@ -22,7 +22,8 @@ const Home: NextPage = () => {
         description={t("description")}
         openGraph={{
           type: "website",
-          url: "https://www.hynekfisera.com/",
+          // @ts-ignore
+          url: props._nextI18Next.initialLocale === "en" ? "https://www.hynekfisera.com/" : "https://www.hynekfisera.cz/",
           title: t("title"),
           description: t("description"),
           site_name: "Hynek Fišera",
