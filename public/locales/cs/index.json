@@ -1,4 +1,6 @@
 {
   "title": "Hynek Fišera | Vývoj a design webových aplikací",
-  "description": "Jmenuji se Hynek Fišera a jsem vývojář webových stránek a aplikací. Také mám zkušenosti s UI a UX designem."
+  "description": "Jmenuji se Hynek Fišera a jsem vývojář webových stránek a aplikací. Také mám zkušenosti s UI a UX designem.",
+  "intro_hello": "Zdravím, jsem <0>Hynek</0>!",
+  "intro_tech": "Jsem vývojář webů a webových aplikací. Rád vytvářím zajímavé projekty s technologiemi <0>React</0>, <1>Next.js</1> a <2>Tailwind</2>. Mám také zkušenosti s UI a UX designem a také se střihem videí."
 }

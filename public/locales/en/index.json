@@ -1,4 +1,6 @@
 {
   "title": "Hynek Fišera | Web Development & UX Design",
-  "description": "My name is Hynek and I am a Web Developer from Czech Republic. I'm also interested in logo design, UI/UX design and branding."
+  "description": "My name is Hynek and I am a Web Developer from Czech Republic. I'm also interested in logo design, UI/UX design and branding.",
+  "intro_hello": "Hey, I'm <0>Hynek</0>!",
+  "intro_tech": "I'm a Junior Web Developer and I love creating cool projects with <0>React</0>, <1>Next.js</1> and <2>Tailwind</2>. I also have experience with UI & UX design and video editing."
 }
