@@ -4,6 +4,7 @@ import { appWithTranslation } from "next-i18next";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
 import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
@@ -11,6 +12,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <DefaultSeo {...SEO} />
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 };

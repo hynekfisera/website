@@ -22,7 +22,7 @@ import SwiftpassImage from "/public/assets/portfolio/portfolioSwiftpass.png";
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "header", "index"])),
+      ...(await serverSideTranslations(locale, ["common", "header", "footer", "index"])),
     },
   };
 }
