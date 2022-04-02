@@ -82,9 +82,9 @@ const Links: NextPage = (props) => {
         ]}
       />
       <main>
-        <section id="links" className="py-16">
-          <div className="max-w-screen-sm mx-auto px-4">
-            <h1 className="text-center text-3xl font-semibold mb-8">{t("heading")}</h1>
+        <section id="links" className="py-8 sm:py-12">
+          <h1 className="text-center text-3xl font-semibold mb-8 hidden sm:block">{t("heading")}</h1>
+          <div className="max-w-sm mx-auto px-4">
             {links.map((link, i) => (
               <Link href={link.href} key={i}>
                 <a className="mb-4 flex justify-center items-center gap-1 w-full text-lg font-medium text-center text-gray-700 border border-gray-700 rounded-md py-2 transition duration-200 hover:text-white hover:bg-gray-700">
