@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/next-script-for-ga */
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 
 class MyDocument extends Document {
@@ -20,8 +21,17 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico?v=2" />
           <meta name="msapplication-TileColor" content="#6366f1" />
           <meta name="theme-color" content="#ffffff" />
-          <meta name="description" content="My name is Hynek and I am a Web Developer from Czech Republic. I'm also interested in logo design, UI/UX design and branding." />
-          <meta name="robots" content="index, follow" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WJJCW1HGJ" />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-8WJJCW1HGJ', { page_path: window.location.pathname });
+            `,
+            }}
+          />
         </Head>
         <body>
           <Main />

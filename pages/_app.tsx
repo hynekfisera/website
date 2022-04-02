@@ -10,17 +10,26 @@ import NProgress from "nprogress";
 import { useEffect } from "react";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  // @ts-ignore
+  const handleRouteChange = (url) => {
+    // @ts-ignore
+    window.gtag("config", "G-8WJJCW1HGJ", {
+      page_path: url,
+    });
+    NProgress.done();
+  };
+
   useEffect(() => {
     const handleRouteStart = () => NProgress.start();
     const handleRouteDone = () => NProgress.done();
 
     Router.events.on("routeChangeStart", handleRouteStart);
-    Router.events.on("routeChangeComplete", handleRouteDone);
+    Router.events.on("routeChangeComplete", handleRouteChange);
     Router.events.on("routeChangeError", handleRouteDone);
 
     return () => {
       Router.events.off("routeChangeStart", handleRouteStart);
-      Router.events.off("routeChangeComplete", handleRouteDone);
+      Router.events.off("routeChangeComplete", handleRouteChange);
       Router.events.off("routeChangeError", handleRouteDone);
     };
   }, []);
