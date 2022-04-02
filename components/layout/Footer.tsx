@@ -23,7 +23,7 @@ export default function Footer() {
               components={[
                 <TransLink href="https://nextjs.org/" className="text-indigo-500 hover:underline" key={0} />,
                 <TransLink href="https://tailwindcss.com/" className="text-indigo-500 hover:underline" key={1} />,
-                <TransLink href="https://netlify.com/" className="text-indigo-500 hover:underline" key={2} />,
+                <TransLink href="https://vercel.com/" className="text-indigo-500 hover:underline" key={2} />,
               ]}
             />
           </div>

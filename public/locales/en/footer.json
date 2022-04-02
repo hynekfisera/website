@@ -1,4 +1,4 @@
 {
   "madewith": "Made with <0/> in <1>Hradec Králové</1>",
-  "builtusing": "Built & deployed using <0>Next.js</0>, <1>Tailwind</1> and <2>Netlify</2>"
+  "builtusing": "Built & deployed using <0>Next.js</0>, <1>Tailwind</1> and <2>Vercel</2>"
 }
