@@ -48,7 +48,7 @@ export default function Header() {
         <div
           className={`${visible ? "translate-x-0" : "translate-x-full"} ${
             transitionEnabled && "transition-transform duration-300"
-          } z-10 flex flex-col fixed pt-20 sm:pt-0 pl-8 sm:pl-0 top-0 h-full right-0 w-48 sm:w-auto bg-indigo-500 sm:static sm:bg-transparent gap-4 sm:gap-8 sm:translate-x-0 sm:flex-row`}
+          } z-10 flex flex-col fixed pt-20 sm:pt-0 pl-8 sm:pl-0 top-0 bottom-0 h-screen right-0 w-48 sm:w-auto bg-indigo-500 sm:static sm:bg-transparent gap-4 sm:gap-8 sm:translate-x-0 sm:flex-row`}
         >
           {links.map((link) => (
             <Link href={link.href} key={link.href}>
