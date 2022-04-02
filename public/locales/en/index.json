@@ -5,5 +5,13 @@
   "intro_tech": "I'm a Junior Web Developer and I love creating cool projects with <0>React</0>, <1>Next.js</1> and <2>Tailwind</2>. I also have experience with UI & UX design and video editing.",
   "intro_portfolio": "You can find some of the projects I've worked on below or you can check out my <0>GitHub</0> where I share my coding projects!",
   "intro_cta1": "Let's get in touch",
-  "intro_cta2": "My GitHub"
+  "intro_cta2": "My GitHub",
+  "portfolio_swiftpass": "Smart password generator which can generate not only strong, but also quick-to-enter passwords",
+  "portfolio_acewill": "I designed a prototype of the Acewill operating system distributed by Aprocle",
+  "portfolio_garnet": "I designed a logo for the Garnet operating system",
+  "portfolio_eryes": "I created livestream overlays and social media posts for the Eryes league",
+  "portfolio_vrcc": "I developed a website for the VR Component Constructor project",
+  "portfolio_nylium": "I coded a website for the Nylium Survival minecraft server",
+  "portfolio_link_learnmore": "Learn more",
+  "portfolio_link_sourcecode": "Source code"
 }

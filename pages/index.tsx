@@ -35,45 +35,45 @@ const Home: NextPage = (props) => {
       img: SwiftpassImage,
       logo: SwiftpassLogo,
       name: "Swiftpass",
-      description: "Smart password generator which can generate not only strong, but also quick-to-enter passwords.",
+      description: t("portfolio_swiftpass"),
       links: [
-        { text: "Learn more", href: "https://swiftpass.hynekfisera.com/", type: "primary" },
-        { text: "Source code", href: "http://github.com/hynekfisera/swiftpass", type: "secondary" },
+        { text: t("portfolio_link_learnmore"), href: "https://swiftpass.hynekfisera.com/", type: "primary" },
+        { text: t("portfolio_link_sourcecode"), href: "http://github.com/hynekfisera/swiftpass", type: "secondary" },
       ],
     },
     {
       img: AcewillImage,
       logo: AcewillLogo,
       name: "Acewill",
-      description: "I designed a prototype of the Acewill operating system distributed by Aprocle.",
-      links: [{ text: "Learn more", href: "http://aprocle.com/", type: "secondary" }],
+      description: t("portfolio_acewill"),
+      links: [{ text: t("portfolio_link_learnmore"), href: "http://aprocle.com/", type: "secondary" }],
     },
     {
       img: GarnetImage,
       logo: GarnetLogo,
       name: "Garnet",
-      description: "I designed a logo for the Garnet operating system",
-      links: [{ text: "Learn more", href: "http://github.com/GarnetOS", type: "secondary" }],
+      description: t("portfolio_garnet"),
+      links: [{ text: t("portfolio_link_learnmore"), href: "http://github.com/GarnetOS", type: "secondary" }],
     },
     {
       img: EryesImage,
       logo: EryesLogo,
       name: "Eryes",
-      description: "I created livestream overlays and social media posts for the Eryes league",
-      links: [{ text: "Learn more", href: "http://www.twitch.tv/eryesloleague", type: "secondary" }],
+      description: t("portfolio_eryes"),
+      links: [{ text: t("portfolio_link_learnmore"), href: "http://www.twitch.tv/eryesloleague", type: "secondary" }],
     },
     {
       img: VrccImage,
       logo: VrccLogo,
       name: "VRCC",
-      description: "I developed a website for the VR Component Constructor project",
+      description: t("portfolio_vrcc"),
       links: [],
     },
     {
       img: NyliumImage,
       logo: NyliumLogo,
       name: "Nylium",
-      description: "I coded a website for the Nylium Survival minecraft server",
+      description: t("portfolio_nylium"),
       links: [],
     },
   ];
@@ -135,7 +135,7 @@ const Home: NextPage = (props) => {
               </div>
               <div className="sm:w-1/2 flex flex-col justify-center">
                 <div className="flex items-center mb-4">
-                  <div className="h-8 w-8 sm:h-10 sm:w-10 xl:h-12 xl:w-12 mr-2 flex items-center justify-center">
+                  <div className="h-8 w-8 sm:h-10 sm:w-10 xl:h-11 xl:w-11 mr-2 flex items-center justify-center">
                     <Image src={project.logo} alt={project.name + "logo"} />
                   </div>
                   <span className="text-2xl xl:text-3xl font-bold text-gray-800">{project.name}</span>
@@ -145,7 +145,7 @@ const Home: NextPage = (props) => {
                   {project.links.map((link, i) => {
                     return (
                       <Link href={link.href} key={i}>
-                        <a className={`xl:text-xl font-bold transition duration-200 ${link.type === "primary" ? "text-indigo-500 hover:text-indigo-700 underline underline-offset-2" : "text-gray-700 hover:text-gray-800"}`}>{link.text}</a>
+                        <a className={`xl:text-xl font-semibold transition duration-200 underline underline-offset-2 ${link.type === "primary" ? "text-indigo-500 hover:text-indigo-700" : "text-gray-700 hover:text-gray-900 sm:no-underline"}`}>{link.text}</a>
                       </Link>
                     );
                   })}
