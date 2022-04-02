@@ -12,5 +12,6 @@ module.exports = {
         defaultLocale: "cs",
       },
     ],
+    localeDetection: false,
   },
 };

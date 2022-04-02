@@ -45,7 +45,7 @@ const Home: NextPage = (props) => {
         <section id="aboutme" className="py-16">
           <div className="max-w-screen-lg mx-auto px-4">
             <div className="my-auto">
-              <h1 className="text-2xl sm:text-3xl font-semibold text-gray-700">
+              <h1 className="text-2xl md:text-3xl font-semibold text-gray-700">
                 <Trans t={t} i18nKey="intro_hello" components={[<span className="text-indigo-500" key={0} />]} />
               </h1>
               <p className="sm:text-lg text-gray-900 mt-4">
