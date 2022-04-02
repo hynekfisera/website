@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  .btn {
+    @apply block px-6 py-2.5 text-sm font-semibold transition duration-300 border rounded-md focus:outline-none;
+  }
+
+  .btn-primary {
+    @apply text-white border-transparent bg-indigo-500 shadow-lg shadow-indigo-500/40 hover:bg-indigo-600 focus:outline-none focus:ring-4 focus:ring-indigo-400 focus:ring-opacity-75;
+  }
+
+  .btn-secondary {
+    @apply text-gray-700 border-gray-400 hover:border-gray-600 hover:text-gray-800;
+  }
+}

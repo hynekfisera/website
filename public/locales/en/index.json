@@ -2,5 +2,8 @@
   "title": "Hynek Fišera | Web Development & UX Design",
   "description": "My name is Hynek and I am a Web Developer from Czech Republic. I'm also interested in logo design, UI/UX design and branding.",
   "intro_hello": "Hey, I'm <0>Hynek</0>!",
-  "intro_tech": "I'm a Junior Web Developer and I love creating cool projects with <0>React</0>, <1>Next.js</1> and <2>Tailwind</2>. I also have experience with UI & UX design and video editing."
+  "intro_tech": "I'm a Junior Web Developer and I love creating cool projects with <0>React</0>, <1>Next.js</1> and <2>Tailwind</2>. I also have experience with UI & UX design and video editing.",
+  "intro_portfolio": "You can find some of the projects I've worked on below or you can check out my <0>GitHub</0> where I share my coding projects!",
+  "intro_cta1": "Let's get in touch",
+  "intro_cta2": "My GitHub"
 }
