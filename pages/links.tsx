@@ -79,6 +79,15 @@ const Links: NextPage = (props) => {
     <>
       <NextSeo
         title={t("title")}
+        description={t("description")}
+        openGraph={{
+          type: "website",
+          // @ts-ignore
+          url: props._nextI18Next.initialLocale === "en" ? "https://www.hynekfisera.com/links" : "https://www.hynekfisera.cz/links",
+          title: t("title"),
+          description: t("description"),
+          site_name: "Hynek Fišera",
+        }}
         languageAlternates={[
           {
             hrefLang: "en",
