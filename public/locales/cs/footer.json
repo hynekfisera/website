@@ -1,4 +1,11 @@
 {
+  "group_portfolio": "Portfolio",
+  "group_about": "O mně",
+  "group_social": "Sociální sítě",
+  "group_resources": "Nástroje",
+  "link_about_about": "O mně",
+  "link_about_contact": "Kontakt",
+  "link_resources_ide": "Nastavení IDE",
   "madewith": "Vytvořeno s <0/> v <1>Hradci Králové</1>",
   "builtusing": "Vytvořeno za pomocí <0>Next.js</0>, <1>Tailwind</1> a <2>Vercel</2>"
 }
