@@ -8,7 +8,7 @@ import { NextSeo } from "next-seo";
 import { useTranslation } from "next-i18next";
 
 export async function getServerSideProps({ locale }: { locale: string }) {
-  const source = fs.readFileSync(path.join(process.cwd(), "content", "ide", `${locale}.mdx`), "utf-8");
+  const source = fs.readFileSync(path.join("content", "ide", `${locale}.mdx`), "utf-8");
   const mdxSource = await serialize(source);
   return { props: { ...(await serverSideTranslations(locale, ["common", "header", "footer", "ide"])), source: mdxSource } };
 }
