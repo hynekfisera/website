@@ -50,7 +50,7 @@ const Ide: NextPage = (props: any) => {
           },
         ]}
       />
-      <article className="!max-w-screen-lg mx-auto px-4 mt-8 mb-12 lg:mb-20 lg:px-0 prose prose-sm lg:prose-lg prose-headings:!mt-8 prose-headings:!my-4 prose-headings:text-indigo-500 lg:prose-h1:!text-[40px] prose-a:text-indigo-500 hover:prose-a:text-indigo-700 prose-strong:!text-gray-700">
+      <article className="!max-w-screen-lg mx-auto px-4 mt-8 mb-12 lg:mb-20 lg:px-0 prose lg:prose-lg prose-headings:!mt-8 prose-headings:!my-4 prose-headings:text-indigo-500 prose-h1:!text-[32px] lg:prose-h1:!text-[40px] prose-a:text-indigo-500 hover:prose-a:text-indigo-700 prose-strong:!text-gray-700">
         <MDXRemote {...props.source} />
       </article>
     </>
