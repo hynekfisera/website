@@ -28,7 +28,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 const Home: NextPage = (props) => {
-  const { t } = useTranslation("index");
+  const { t }: { t: any } = useTranslation("index");
 
   const projects = [
     {
@@ -127,7 +127,7 @@ const Home: NextPage = (props) => {
           </div>
         </section>
         <section id="portfolio" className="py-8 max-w-screen-xl mx-auto px-4 xl:px-0">
-          <h2 className="text-center text-3xl sm:text-4xl xl:text-[42px] mb-4 lg:mb-0 text-gray-700">Portfolio</h2>
+          <h2 className="text-center text-3xl sm:text-4xl xl:text-[40px] mb-4 lg:mb-0 text-gray-700">Portfolio</h2>
           {projects.map((project) => (
             <div key={project.name} className="flex flex-col sm:even:flex-row-reverse sm:flex-row mb-16 sm:mb-12 md:mb-0">
               <div className="sm:w-1/2 sm:px-4 md:px-16">

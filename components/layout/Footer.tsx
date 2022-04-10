@@ -38,7 +38,7 @@ export default function Footer() {
         { text: "Spotify", href: "https://open.spotify.com/user/hynekfisera" },
       ],
     },
-    { name: t("group_resources"), links: [{ text: t("link_resources_ide"), href: "#" }] },
+    { name: t("group_resources"), links: [{ text: t("link_resources_ide"), href: "/resources/ide" }] },
   ];
 
   return (
