@@ -3,6 +3,15 @@
 module.exports = {
   siteUrl: "https://www.hynekfisera.com",
   generateRobotsTxt: true,
+  robotsTxtOptions: {
+    policies: [
+      { userAgent: "*", disallow: "/en" },
+      { userAgent: "*", disallow: "/cs" },
+      { userAgent: "*", disallow: "/en/*" },
+      { userAgent: "*", disallow: "/cs/*" },
+      { userAgent: "*", allow: "/" },
+    ],
+  },
   alternateRefs: [
     {
       href: "https://www.hynekfisera.com",
