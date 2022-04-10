@@ -10,7 +10,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 export default function Custom500() {
-  const { t } = useTranslation("errorpages");
+  const { t }: { t: any } = useTranslation("errorpages");
 
   return (
     <main className="h-[80vh] pt-16">

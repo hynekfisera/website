@@ -28,7 +28,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 const Home: NextPage = (props) => {
-  const { t } = useTranslation("index");
+  const { t }: { t: any } = useTranslation("index");
 
   const projects = [
     {

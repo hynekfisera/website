@@ -16,7 +16,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 const Links: NextPage = (props) => {
-  const { t } = useTranslation("links");
+  const { t }: { t: any } = useTranslation("links");
 
   const links = [
     {

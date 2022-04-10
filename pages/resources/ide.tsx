@@ -14,7 +14,7 @@ export async function getServerSideProps({ locale }: { locale: string }) {
 }
 
 const Ide: NextPage = (props: any) => {
-  const { t } = useTranslation("ide");
+  const { t }: { t: any } = useTranslation("ide");
   // TODO: Add "show all resources" link above the article
   return (
     <>
