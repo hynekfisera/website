@@ -15,7 +15,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
   };
 }
 
-const Links: NextPage = (props) => {
+const Links: NextPage = (props: any) => {
   const { t }: { t: any } = useTranslation("links");
 
   const links = [
@@ -80,6 +80,7 @@ const Links: NextPage = (props) => {
       <NextSeo
         title={t("title")}
         description={t("description")}
+        canonical={props._nextI18Next.initialLocale === "en" ? "https://www.hynekfisera.com/links" : "https://www.hynekfisera.cz/links"}
         openGraph={{
           type: "website",
           // @ts-ignore

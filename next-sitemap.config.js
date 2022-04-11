@@ -5,10 +5,6 @@ module.exports = {
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
-      { userAgent: "*", disallow: "/en" },
-      { userAgent: "*", disallow: "/cs" },
-      { userAgent: "*", disallow: "/en/*" },
-      { userAgent: "*", disallow: "/cs/*" },
       { userAgent: "*", allow: "/" },
     ],
   },

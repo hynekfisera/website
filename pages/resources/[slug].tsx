@@ -31,6 +31,7 @@ const Ide: NextPage = (props: any) => {
       <NextSeo
         title={t("title")}
         description={t("description")}
+        canonical={props._nextI18Next.initialLocale === "en" ? "https://www.hynekfisera.com/resources/ide" : "https://www.hynekfisera.cz/resources/ide"}
         openGraph={{
           type: "website",
           // @ts-ignore
