@@ -18,6 +18,8 @@ import NyliumLogo from "/public/assets/portfolio/nylium.png";
 import NyliumImage from "/public/assets/portfolio/portfolioNylium.webp";
 import SwiftpassLogo from "/public/assets/portfolio/vercel.png";
 import SwiftpassImage from "/public/assets/portfolio/portfolioSwiftpass.png";
+import FlairleapLogo from "/public/assets/portfolio/flairleap.svg";
+import FlairleapImage from "/public/assets/portfolio/portfolioFlairleap.png";
 
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
@@ -31,6 +33,13 @@ const Home: NextPage = (props: any) => {
   const { t }: { t: any } = useTranslation("index");
 
   const projects = [
+    {
+      img: FlairleapImage,
+      logo: FlairleapLogo,
+      name: "Flairleap",
+      description: t("portfolio_flairleap"),
+      links: [{ text: t("portfolio_link_learnmore"), href: "https://flairleap.com/", type: "primary" }],
+    },
     {
       img: SwiftpassImage,
       logo: SwiftpassLogo,
