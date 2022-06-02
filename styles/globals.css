@@ -8,7 +8,7 @@
   }
 
   .btn {
-    @apply block px-6 py-2.5 text-sm font-semibold transition duration-300 border rounded-md focus:outline-none;
+    @apply block px-6 py-2.5 text-sm lg:text-base font-semibold lg:font-medium transition duration-300 border rounded-md focus:outline-none;
   }
 
   .btn-primary {
@@ -16,7 +16,7 @@
   }
 
   .btn-secondary {
-    @apply text-gray-700 border-gray-400 hover:border-gray-600 hover:text-gray-800;
+    @apply text-slate-700 border-slate-400 hover:border-slate-600 hover:text-slate-800;
   }
 }
 

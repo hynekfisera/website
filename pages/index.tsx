@@ -7,15 +7,15 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import TransLink from "../components/translation/TransLink";
 
 import AcewillLogo from "/public/assets/portfolio/acewill.png";
-import AcewillImage from "/public/assets/portfolio/portfolioAcewill.webp";
+import AcewillImage from "/public/assets/portfolio/portfolioAcewill.png";
 import GarnetLogo from "/public/assets/portfolio/garnet.svg";
-import GarnetImage from "/public/assets/portfolio/portfolioGarnet.webp";
+import GarnetImage from "/public/assets/portfolio/portfolioGarnet.png";
 import EryesLogo from "/public/assets/portfolio/eryes.png";
-import EryesImage from "/public/assets/portfolio/portfolioEryes.webp";
+import EryesImage from "/public/assets/portfolio/portfolioEryes.png";
 import VrccLogo from "/public/assets/portfolio/vrcc.png";
-import VrccImage from "/public/assets/portfolio/portfolioVrcc.webp";
+import VrccImage from "/public/assets/portfolio/portfolioVrcc.png";
 import NyliumLogo from "/public/assets/portfolio/nylium.png";
-import NyliumImage from "/public/assets/portfolio/portfolioNylium.webp";
+import NyliumImage from "/public/assets/portfolio/portfolioNylium.png";
 import SwiftpassLogo from "/public/assets/portfolio/vercel.png";
 import SwiftpassImage from "/public/assets/portfolio/portfolioSwiftpass.png";
 import FlairleapLogo from "/public/assets/portfolio/flairleap.svg";
@@ -113,16 +113,16 @@ const Home: NextPage = (props: any) => {
         ]}
       />
       <main>
-        <section id="about-me" className="py-12">
+        <section id="about-me" className="pt-28 pb-20 bg-gradient-to-b from-indigo-50 to-violet-100 shadow-inner">
           <div className="max-w-screen-lg mx-auto px-4">
             <div className="my-auto">
-              <h1 className="text-2xl md:text-3xl font-semibold text-gray-700">
+              <h1 className="text-2xl md:text-3xl font-semibold text-slate-700">
                 <Trans t={t} i18nKey="intro_hello" components={[<span className="text-indigo-500" key={0} />]} />
               </h1>
-              <p className="sm:text-lg xl:text-xl text-gray-900 mt-4 xl:mt-5">
+              <p className="sm:text-lg xl:text-xl text-slate-900 mt-4 xl:mt-5">
                 <Trans t={t} i18nKey="intro_tech" components={[<span className="font-semibold" key={0}></span>, <span className="font-semibold" key={1}></span>, <span className="font-semibold" key={2}></span>]} />
               </p>
-              <p className="sm:text-lg xl:text-xl text-gray-900 mt-2 xl:mt-3">
+              <p className="sm:text-lg xl:text-xl text-slate-900 mt-2 xl:mt-3">
                 <Trans t={t} i18nKey="intro_portfolio" components={[<TransLink href="https://github.com/hynekfisera" className="text-indigo-500 hover:underline" key={0} />]} />
               </p>
               <div className="flex flex-wrap mt-4 xl:mt-5 gap-3">
@@ -136,33 +136,35 @@ const Home: NextPage = (props: any) => {
             </div>
           </div>
         </section>
-        <section id="portfolio" className="py-8 max-w-screen-xl mx-auto px-4 xl:px-0">
-          <h2 className="text-center text-3xl sm:text-4xl xl:text-[40px] mb-4 lg:mb-0 text-gray-700">Portfolio</h2>
-          {projects.map((project) => (
-            <div key={project.name} className="flex flex-col sm:even:flex-row-reverse sm:flex-row mb-16 sm:mb-12 md:mb-0">
-              <div className="sm:w-1/2 sm:px-4 md:px-16">
-                <Image src={project.img} alt={project.name} />
-              </div>
-              <div className="sm:w-1/2 flex flex-col justify-center">
-                <div className="flex items-center mb-4">
-                  <div className="h-8 w-8 sm:h-10 sm:w-10 xl:h-11 xl:w-11 mr-2 flex items-center justify-center">
-                    <Image src={project.logo} alt={project.name + "logo"} />
+        <section id="portfolio" className="pb-2 lg:pb-6 pt-12 lg:pt-16 bg-slate-50">
+          <div className="max-w-screen-xl mx-auto px-4 xl:px-0">
+            <h2 className="text-center text-3xl sm:text-4xl xl:text-[40px] mb-4 lg:mb-0 text-slate-700">Portfolio</h2>
+            {projects.map((project) => (
+              <div key={project.name} className="flex flex-col sm:even:flex-row-reverse sm:flex-row mb-16 sm:mb-12 md:mb-0">
+                <div className="sm:w-1/2 sm:px-4 md:px-16">
+                  <Image src={project.img} alt={project.name} />
+                </div>
+                <div className="sm:w-1/2 flex flex-col justify-center">
+                  <div className="flex items-center mb-4">
+                    <div className="h-8 w-8 sm:h-10 sm:w-10 xl:h-11 xl:w-11 mr-2 flex items-center justify-center">
+                      <Image src={project.logo} alt={project.name + "logo"} />
+                    </div>
+                    <span className="text-2xl xl:text-3xl font-bold text-slate-800">{project.name}</span>
                   </div>
-                  <span className="text-2xl xl:text-3xl font-bold text-gray-800">{project.name}</span>
-                </div>
-                <p className="text-lg sm:text-xl xl:text-2xl mb-2 sm:mb-3">{project.description}</p>
-                <div className="flex gap-3">
-                  {project.links.map((link, i) => {
-                    return (
-                      <Link href={link.href} key={i}>
-                        <a className={`xl:text-xl font-semibold transition duration-200 underline underline-offset-2 ${link.type === "primary" ? "text-indigo-500 hover:text-indigo-700" : "text-gray-700 hover:text-gray-900 sm:no-underline"}`}>{link.text}</a>
-                      </Link>
-                    );
-                  })}
+                  <p className="text-lg sm:text-xl xl:text-2xl mb-2 sm:mb-3">{project.description}</p>
+                  <div className="flex gap-3">
+                    {project.links.map((link, i) => {
+                      return (
+                        <Link href={link.href} key={i}>
+                          <a className={`xl:text-xl font-semibold transition duration-200 underline underline-offset-2 ${link.type === "primary" ? "text-indigo-500 hover:text-indigo-700" : "text-slate-700 hover:text-slate-900 sm:no-underline"}`}>{link.text}</a>
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </section>
       </main>
     </>

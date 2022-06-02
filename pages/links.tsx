@@ -101,14 +101,14 @@ const Links: NextPage = (props: any) => {
         ]}
       />
       <main>
-        <section id="links" className="py-8 sm:py-12">
+        <section id="links" className="pb-8 pt-24 sm:pb-12 bg-slate-50">
           <h1 className="text-center text-3xl font-semibold mb-8 hidden sm:block">{t("heading")}</h1>
           <div className="max-w-sm mx-auto px-4 sm:px-0">
             {links.map((link, i) => (
               <Link href={link.href} key={i}>
                 <a
                   className={`mb-4 flex justify-center items-center gap-1 w-full text-lg font-medium text-center border rounded-md py-2 transition duration-200 hover:text-white ${
-                    link.type === "primary" ? "border-indigo-600 text-indigo-600 hover:bg-indigo-500" : "border-gray-600 text-gray-600 hover:bg-gray-600"
+                    link.type === "primary" ? "border-indigo-600 text-indigo-600 hover:bg-indigo-500" : "border-slate-600 text-slate-600 hover:bg-slate-600"
                   }`}
                 >
                   {link.icon && <FontAwesomeIcon icon={link.icon} className="h-4" />} {link.title}
