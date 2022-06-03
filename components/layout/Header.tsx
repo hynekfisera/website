@@ -45,7 +45,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 border-b ${top ? "py-4 md:py-6 bg-transparent border-transparent" : "py-2 md:py-4 border-slate-200 bg-slate-100/50 backdrop-blur-[2px]"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 border-b py-3 ${top ? "md:py-6 bg-transparent border-transparent" : "border-slate-200 bg-slate-100/50 backdrop-blur-[2px]"}`}>
       <div className="flex justify-between items-center max-w-screen-2xl mx-auto px-6 sm:px-8 md:px-12">
         <Link href="/">
           <a className="transition duration-200 hover:opacity-90 flex items-center">
@@ -66,7 +66,7 @@ export default function Header() {
               </Link>
             ))}
           </div>
-          <FontAwesomeIcon icon={faBars} className={`z-20 h-7 w-7 ${visible ? `text-white fixed transition-all duration-200 ${top ? "top-[22px]" : "top-[14px]"} right-6` : "text-slate-700"} sm:!hidden cursor-pointer`} onClick={() => setVisible((v) => !v)} />
+          <FontAwesomeIcon icon={faBars} className={`z-20 h-7 w-7 ${visible ? "text-white fixed transition-all duration-200 top-[18px] right-6" : "text-slate-700"} sm:!hidden cursor-pointer`} onClick={() => setVisible((v) => !v)} />
           <Link href={asPath} locale={locale === "en" ? "cs" : "en"}>
             <a className={`${!visible ? "flex" : "hidden"} items-center justify-center text-indigo-500 hover:text-indigo-700 transition duration-200`}>
               <FontAwesomeIcon icon={faGlobe} className="h-[18px] sm:h-5" />
