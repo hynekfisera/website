@@ -1,3 +1,4 @@
+import React from "react";
 import type { NextPage } from "next";
 import { useTranslation, Trans } from "next-i18next";
 import { NextSeo } from "next-seo";
@@ -5,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import TransLink from "../components/translation/TransLink";
+import { GithubRepository } from "@hynekfisera/embeds";
 
 import AcewillLogo from "/public/assets/portfolio/acewill.png";
 import AcewillImage from "/public/assets/portfolio/portfolioAcewill.png";
@@ -164,6 +166,16 @@ const Home: NextPage = (props: any) => {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+        <section id="projects" className="pb-2 lg:pb-6 pt-4 lg:pt-8 bg-slate-50">
+          <div className="max-w-screen-xl mx-auto px-4 xl:px-0">
+            <h2 className="text-center text-3xl sm:text-4xl xl:text-[40px] mb-4 lg:mb-0 text-slate-700">{t("projects", { ns: "header" })}</h2>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {["swiftpass", "eko-odpisy", "website", "skyrim-alchemy", "embeds"].map((repo) => (
+                <GithubRepository key={repo} owner="hynekfisera" repo={repo} nameColor="#6366f1" />
+              ))}
+            </div>
           </div>
         </section>
       </main>
